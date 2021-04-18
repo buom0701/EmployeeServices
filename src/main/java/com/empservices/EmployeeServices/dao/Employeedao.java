@@ -15,7 +15,7 @@ public class Employeedao {
 	//Adds new Employee record (Create)
 	public String saveEmployee(Employee emp) {
 		ep.save(emp);
-		return "Employee saved!";
+		return "Employee saved";
 	}
 	
 	//Returns All Employees (Read)
