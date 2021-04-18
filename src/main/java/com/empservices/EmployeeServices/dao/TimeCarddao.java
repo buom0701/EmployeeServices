@@ -34,13 +34,13 @@ public class TimeCarddao {
 	// Update
 	public String update(TimeCard tc) {
 		tr.save(tc);
-		return "New timecard updated";
+		return "Timecard ID " + tc.getTimecardid() + " updated";
 	}
 
 	// Delete
 	public String delete(TimeCard tc) {
 		tr.deleteById(tc.getTimecardid());
-		return "New timecard deleted";
+		return "Timecard ID " + tc.getTimecardid() + " deleted";
 	}
 
 	
