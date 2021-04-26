@@ -1,4 +1,4 @@
-package com.empservices.EmployeeServices.Resources;
+package com.empservices.EmployeeServices.Controller;
 
 import java.util.List;
 import java.util.Optional;

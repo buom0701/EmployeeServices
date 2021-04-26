@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.NonNull;
+
 @Entity
 @Table (name = "TIMECARD")
 public class TimeCard {
@@ -25,10 +27,10 @@ public class TimeCard {
 	private String out;
 	
 	@ManyToOne
-	@JoinColumn(name = "Emp_Id", referencedColumnName = "Id")
+	@NonNull
+	@JoinColumn(name = "emp_id", referencedColumnName = "Id")
 	private Employee employee;
-	
-	
+		
 	public int getTimecardid() {
 		return timecardid;
 	}
@@ -59,6 +61,4 @@ public class TimeCard {
 	public void setEmployee(Employee employee) {
 		this.employee = employee;
 	}
-	
-	
 }
