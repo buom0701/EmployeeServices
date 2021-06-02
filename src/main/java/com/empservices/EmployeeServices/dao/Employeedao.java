@@ -20,6 +20,7 @@ public class Employeedao {
 	
 	//Returns All Employees (Read)
 	public List <Employee> findall() {
+		System.out.println("This is a test");
 		return (List<Employee>) ep.findAll();
 	}
 	

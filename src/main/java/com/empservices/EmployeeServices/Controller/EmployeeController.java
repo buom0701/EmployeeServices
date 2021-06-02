@@ -21,6 +21,11 @@ public class EmployeeController {
 	@Autowired
 	EmployeeRepo ep;
 	
+	@RequestMapping(value = "/")
+	public String welcome() {
+		return "Welcome Home";
+	}
+	
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String Addemployee(@RequestBody Employee emp) {
 //		System.out.println(employee.getFirstname());

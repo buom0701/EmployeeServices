@@ -4,6 +4,7 @@ package com.empservices.EmployeeServices.Model;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Generated;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +20,7 @@ public class Employee {
 	
 	@javax.persistence.Id
 	@Column
-	private int Id;
+	private int id;
 	@Column
 	private String firstname;
 	@Column
@@ -38,10 +39,10 @@ public class Employee {
 //	private List<TimeCard> timecard;
 	
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 //	public List<TimeCard> getTimecard() {
 //		return timecard;
